@@ -1,0 +1,136 @@
+main{
+    margin-top: 300px;
+}
+.main__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.main__box{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding-left: 100px;
+}
+.main__box2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+   }
+.main__background{
+    width: 700px;
+    height: 500px;
+    background-image: url(../images/telemetry.png);
+    background-repeat: no-repeat;
+}
+.main__background2{
+    width: 700px;
+    height: 500px;
+    background-image: url(../images/city-camp.png);
+    background-repeat: no-repeat;
+    background-position: right 85%;
+}
+.main__background3{
+    width: 700px;
+    height: 500px;
+    background-image: url(../images/payments.png);
+    background-repeat: no-repeat;
+}
+.main__information{
+    width: 450px;
+}
+.main__htag{
+    font-family: 'Space Mono' , monospace;
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+letter-spacing: -2.14286px;
+color: $Dark-Navy;
+}
+.main__ptag{
+    font-family: 'Lexend Deca' , sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: $Dim-Grey;
+margin: 25px 0;
+}
+.main__button{
+    @extend %button;
+    &:hover{
+        @extend %button-hover;
+    }
+}
+@media (min-width:0) and (max-width:600px) {
+    main{
+        margin-top: 1050px;
+    }
+    .main__box{
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+       padding-left: 0;
+       }
+       .main__box2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        }
+       .main__background{
+        width: 100%;
+        background-image: url(../images/mobile2.png);
+        background-position:-90px;
+       }
+       .main__background3{
+        width: 100%;
+        background-image: url(../images/mobile4.png);
+        background-position:30px;
+       }
+       .main__background2{
+        width: 100%;
+        background-image: url(../images/mobile3.png);
+        background-position:-470px ;
+       }
+       .main__information{
+        text-align: center;
+       }
+       @media (min-width:601px) and (max-width:966px) {
+        main{
+            margin-top: 1050px;
+        }
+        .main__box{
+           flex-direction: column-reverse;
+           justify-content: center;
+           align-items: center;
+           padding-left: 0;
+           }
+           .main__box2{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-right: 0;
+            }
+           .main__background{
+            width: 100%;
+            background-image: url(../images/mobile2.png);
+            background-position:-90px;
+           }
+           .main__background3{
+            width: 100%;
+            background-image: url(../images/mobile4.png);
+            background-position:30px;
+           }
+           .main__background2{
+            width: 100%;
+            background-image: url(../images/mobile3.png);
+            background-position:-470px ;
+           }
+           .main__information{
+            text-align: center;
+           }
+}
+}

@@ -1,0 +1,33 @@
+$yellow:#FCB72B;
+$Dark-Navy:#495567;
+$Dim-Grey: #939CAA;
+$Light-Grey:#E5ECF4;
+
+%button{
+    width: 180px;
+    height:50px;
+    font-family: 'Space Mono' , monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
+    color: #FFFFFF;
+    background-color:$yellow;
+    cursor: pointer;
+}
+%button-hover{
+    background-color: white;
+    color: $yellow;
+    border: 2px solid $yellow;
+}
+%mobile{
+    width: 210px;
+    height:50px;
+    text-align: center;
+    border: none;
+    color: #FFFFFF;
+    background-color:$yellow;
+    cursor: pointer;
+}
